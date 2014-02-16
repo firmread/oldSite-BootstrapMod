@@ -1,20 +1,20 @@
 {
-  "name": "twbs/bootstrap",
+  "name": "firmread/firmread.github.io",
   "description": "Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.",
-  "keywords": ["bootstrap", "css"],
-  "homepage": "http://getbootstrap.com",
+  "keywords": ["firm", "tharit tothong", "creative technologist", "new media artist"],
+  "homepage": "http://firmread.github.io",
   "authors": [
     {
-      "name": "Mark Otto",
-      "email": "markdotto@gmail.com"
+      "name": "Tharit Reed Tothong",
+      "email": "litchirhythm@gmail.com"
     },
     {
-      "name": "Jacob Thornton",
-      "email": "jacobthornton@gmail.com"
+      "name": "@firmread",
+      "email": "firmread@me.com"
     }
   ],
   "support": {
-    "issues": "https://github.com/twbs/bootstrap/issues"
+    "issues": "https://github.com/firmread/firmread.github.io/issues"
   },
   "license": "MIT",
   "extra": {

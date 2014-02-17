@@ -1,36 +1,61 @@
-<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
-  <div class="container">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#fr-navbar-collapse-header">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="../" class="navbar-brand">Bootstrap</a>
+      <a class="navbar-brand" href="../index.html#home">firmread</a>
     </div>
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="fr-navbar-collapse-header">
+<!-- 
       <ul class="nav navbar-nav">
-        <li{% if page.slug == "getting-started" %} class="active"{% endif %}>
-          <a href="../getting-started">Getting started</a>
-        </li>
-        <li{% if page.slug == "css" %} class="active"{% endif %}>
-          <a href="../css">CSS</a>
-        </li>
-        <li{% if page.slug == "components" %} class="active"{% endif %}>
-          <a href="../components">Components</a>
-        </li>
-        <li{% if page.slug == "js" %} class="active"{% endif %}>
-          <a href="../javascript">JavaScript</a>
-        </li>
-        <li{% if page.slug == "customize" %} class="active"{% endif %}>
-          <a href="../customize">Customize</a>
+        <li class="active"><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
         </li>
       </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+       -->
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="{{ site.expo }}" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Community links', 'Expo']);">Expo</a></li>
-        <li><a href="{{ site.blog }}" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Community links', 'Blog']);">Blog</a></li>
+
+        <li>
+          <a href="#work">work</a>
+        </li>
+ 
+        <li>
+          <a href="#press">press</a>
+        </li>
+ 
+        <li>
+          <a href="#contact">contact</a>
+        </li>
+ 
+        <li>
+          <a href="resume.pdf">cv</a>
+        </li>
+
       </ul>
-    </nav>
-  </div>
-</header>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

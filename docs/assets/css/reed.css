@@ -1,0 +1,142 @@
+
+/* 
+=================
+reed's custom navbar
+================= 
+*/
+
+.navbar-reed {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+.navbar-reed .navbar-brand { color: #777 }
+.navbar-reed .navbar-brand:hover,
+.navbar-reed .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+.navbar-reed .navbar-text { color: #777 }
+.navbar-reed .navbar-nav>li>a { color: #777 }
+.navbar-reed .navbar-nav>li>a:hover,
+.navbar-reed .navbar-nav>li>a:focus {
+    color: #333;
+    background-color: transparent;
+}
+.navbar-reed .navbar-nav>.active>a,
+.navbar-reed .navbar-nav>.active>a:hover,
+.navbar-reed .navbar-nav>.active>a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+.navbar-reed .navbar-nav>.disabled>a,
+.navbar-reed .navbar-nav>.disabled>a:hover,
+.navbar-reed .navbar-nav>.disabled>a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+.navbar-reed .navbar-toggle { border-color: #ddd }
+.navbar-reed .navbar-toggle:hover,
+.navbar-reed .navbar-toggle:focus { background-color: #ddd }
+.navbar-reed .navbar-toggle .icon-bar { background-color: #888 }
+.navbar-reed .navbar-collapse,
+.navbar-reed .navbar-form { border-color: #e7e7e7 }
+.navbar-reed .navbar-nav>.open>a,
+.navbar-reed .navbar-nav>.open>a:hover,
+.navbar-reed .navbar-nav>.open>a:focus {
+    background-color: #e7e7e7;
+    color: #555;
+}
+@media (max-width:767px) { 
+    .navbar-reed .navbar-nav .open .dropdown-menu>li>a { color: #777 }
+    .navbar-reed .navbar-nav .open .dropdown-menu>li>a:hover,
+    .navbar-reed .navbar-nav .open .dropdown-menu>li>a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .navbar-reed .navbar-nav .open .dropdown-menu>.active>a,
+    .navbar-reed .navbar-nav .open .dropdown-menu>.active>a:hover,
+    .navbar-reed .navbar-nav .open .dropdown-menu>.active>a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .navbar-reed .navbar-nav .open .dropdown-menu>.disabled>a,
+    .navbar-reed .navbar-nav .open .dropdown-menu>.disabled>a:hover,
+    .navbar-reed .navbar-nav .open .dropdown-menu>.disabled>a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+.navbar-reed .navbar-link { color: #777 }
+.navbar-reed .navbar-link:hover { color: #333 }
+
+
+
+
+
+
+/* 
+=================
+menu 
+================= 
+*/
+
+
+.fr-header{
+
+}
+body{
+	padding-top: 60px;
+}
+
+
+
+
+
+
+
+
+
+/* 
+=================
+home tile 
+================= 
+*/
+
+
+.fr-home-tile{
+	padding:3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

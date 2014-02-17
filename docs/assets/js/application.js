@@ -5,7 +5,8 @@
     'Game', 
     'Interaction', 
     'New Media', 
-    'Humble'
+    'Humble',
+    'Firm'
   ];
 
   var noun = [
@@ -14,37 +15,51 @@
     'Artist', 
     'Architect', 
     'Inventionist', 
-    'Friend'
+    'Friend',
+    'Reader'
   ];
 
   $(document).ready(function() {
 
-      setInterval(function() {
-        randNum = Math.floor((Math.random() * adjective.length) + 0);
-        $('.adjective-loop').html(adjective[randNum]);
-      }, 3000);
 
-      setInterval(function() {
-        randNum = Math.floor((Math.random() * noun.length) + 0);
-        $('.noun-loop').html(noun[randNum]);
-      }, 2500);
+      //from http://stackoverflow.com/questions/10756119/how-to-genrate-random-numbers-with-no-repeat-javascript
+      function randomFrom(array, n) {
+        var at = 0;
+        var tmp, current, top = array.length;
 
+        if(top) while(--top && at++ < n) {
+            current = Math.floor(Math.random() * (top - 1));
+            tmp = array[current];
+            array[current] = array[top];
+            array[top] = tmp;
+        }
 
+        return array.slice(-n);
+      }
+
+      //from http://stackoverflow.com/questions/5248721/jquery-replacewith-fade-animate
+      var adjList = randomFrom(adjective,7);
+      function switchAdj() {
+        var randomN = Math.floor(Math.random() * adjList.length);
+        $('.adjective-loop').fadeOut(100, function(){
+          var nextAdj = $('<span class="adjective-loop">' + adjList[randomN] + '</span>').hide();
+          $(this).replaceWith(nextAdj);
+          $('.adjective-loop').fadeIn(100);
+        });
+      }
+      var nounList = randomFrom(noun,7);
+      function switchNoun() {
+        var randomN = Math.floor(Math.random() * nounList.length);
+        $('.noun-loop').fadeOut(100, function(){
+          var nextNoun = $('<span class="noun-loop">' + nounList[randomN] + '</span>').hide();
+          $(this).replaceWith(nextNoun);
+          $('.noun-loop').fadeIn(100);
+        });
+      }
+
+      setInterval(switchAdj, 3333);
+      setInterval(switchNoun, 4444);
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

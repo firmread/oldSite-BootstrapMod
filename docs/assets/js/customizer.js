@@ -8,9 +8,8 @@
 
 window.onload = function () { // wait for load in a dumb way because B-0
   var cw = '/*!\n' +
-           ' * Bootstrap v3.1.1 (http://getbootstrap.com)\n' +
-           ' * Copyright 2011-2014 Twitter, Inc.\n' +
-           ' * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)\n' +
+           ' * firmread (http://firmread.com)\n' +
+           ' * Copyright 2014 Tharit Reed Tothong @firmread\n' +
            ' */\n\n'
 
   function showError(msg, err) {

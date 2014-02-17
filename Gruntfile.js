@@ -324,6 +324,10 @@ module.exports = function (grunt) {
       less: {
         files: 'less/*.less',
         tasks: ['less', 'copy:docs']
+      },
+      js: {
+        files: 'docs/assets/js/application.js',
+        tasks: 'uglify:docsJs'
       }
     },
 

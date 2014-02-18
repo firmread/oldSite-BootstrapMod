@@ -172,7 +172,7 @@ $(document).ready(function() {
 
     function filter(){// is this a link that points to an anchor and passes a possible filter ? href is checked to avoid a bug in FF.
       return !!this.href && !!this.hash && this.href.replace(this.hash,'') == URI && (!settings.filter || $(this).is( settings.filter ));
-    };
+    }
   };
 
   function scroll( e, link, settings ){
@@ -212,7 +212,7 @@ $(document).ready(function() {
     $target
       .scrollTo( elem, settings ) // do scroll
       .trigger('notify.serialScroll',[elem]); // notify serialScroll about this change
-  };
+  }
 
 })( jQuery );
 
@@ -360,6 +360,7 @@ $(document).ready(function() {
           if( targ.is || targ.style )
             // Get the real position of the target 
             toff = (targ = $(targ)).offset();
+
       }
       $.each( settings.axis.split(''), function( i, axis ){
         var Pos = axis == 'x' ? 'Left' : 'Top',
@@ -411,8 +412,8 @@ $(document).ready(function() {
       function animate( callback ){
         $elem.animate( attr, duration, settings.easing, callback && function(){
           callback.call(this, target, settings);
-        });
-      };
+        })
+      }
 
     }).end();
   };
@@ -435,8 +436,8 @@ $(document).ready(function() {
   };
 
   function both( val ){
-    return typeof val == 'object' ? val : { top:val, left:val };
-  };
+    return typeof val == 'object' ? val : { top:val, left:val }
+  }
 
 })( jQuery );
 

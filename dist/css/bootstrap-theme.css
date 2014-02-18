@@ -356,6 +356,12 @@ body {
   margin-top: -1em;
   overflow: hidden;
 }
+.adjective-loop {
+  font-size: 5vw;
+}
+.noun-loop {
+  font-size: 5vw;
+}
 .fr-home-tile {
   padding: 1.8em;
 }

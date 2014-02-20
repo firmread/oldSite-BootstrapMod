@@ -18,10 +18,13 @@
 
       <a class="navbar-brand" href="
       {% if page.title == 'firmread' %}#home
-      {% else %}../index.html#home
+      {% else %}../
       {% endif %}">
         <div class="fr-navbar-logo">
-          <img src="assets/img/logo_bw.png" 
+          <img src="
+          {% if page.title == 'firmread' %}assets/img/logo_bw.png
+          {% else %}../assets/img/logo_bw.png
+          {% endif %}" 
                alt="firmread" 
                class="img-responsive"/>
         </div>
@@ -38,9 +41,9 @@
           <a href="#work">work</a>
         </li>
  
-        <li>
+<!--         <li>
           <a href="#press">press</a>
-        </li>
+        </li> -->
  
         <li>
           <a href="#contact">contact</a>

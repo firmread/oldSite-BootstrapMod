@@ -11,19 +11,39 @@
     {% include nav-main.html %}
 
     <!-- Docs page layout -->
-    <div class="bs-docs-header" id="content">
+    <div class="fr-work-header" id="content">
       <div class="container">
-        <h1>{{ page.title }}</h1>
-        <p>{{ page.lead }}</p>
+        <!-- <h1>{{ page.title }}</h1> -->
+        <div class="row">
+          <img class="fr-work-head-img center-block" 
+               src="../assets/img/t_{{ page.slug }}.png" 
+               alt"{{ page.slug }}" />
+        </div>
+        <div class="row">
+          <p class="text-center">{{ page.lead }}</p>
+        </div>
       </div>
     </div>
 
-    <div class="container bs-docs-container">
-
+    <div class="fr-content-container">
+      <div class="container">
       <div class="row">
-        <div class="col-xs-12" role="main">
+        <div class="col-xs-12 fr-work-page" role="main">
           {{ content }}
         </div>
+      </div>
+      </div>
+
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>
+
+
+
+
+
 
             <!-- 
         <div class="col-md-3">
@@ -50,11 +70,3 @@
             </a>
           </div>
         </div>-->
-
-      </div>
-
-    </div>
-
-    {% include footer.html %}
-  </body>
-</html>

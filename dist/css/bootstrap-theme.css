@@ -339,7 +339,8 @@
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 body {
-  padding-top: 60px;
+  padding-top: 50px;
+  background-color: white;
 }
 .fr-navbar-logo {
   width: 3.75em;
@@ -355,6 +356,12 @@ body {
   width: 100%;
   margin-top: -1em;
   overflow: hidden;
+  box-shadow: 1px 1px 17px rgba(221, 221, 221, 0.5);
+}
+.fr-text-loop {
+  margin-top: -22vw;
+  color: white;
+  text-shadow: 1em 1em 7em #777;
 }
 .adjective-loop {
   font-size: 5vw;
@@ -362,7 +369,30 @@ body {
 .noun-loop {
   font-size: 5vw;
 }
-.fr-home-tile {
-  padding: 1.8em;
+.fr-tile {
+  padding: 2.3em;
+}
+.fr-tile-container {
+  margin-top: 3vw;
+  margin-bottom: 5vw;
+}
+.fr-work-header {
+  box-shadow: 1px 1px 17px rgba(221, 221, 221, 0.5);
+  border-style: none;
+  border-color: transparent;
+  background-color: white;
+  font-size: 3vw;
+  padding-bottom: 5vw;
+}
+.fr-work-head-img {
+  width: 25vw;
+  margin: 5vw auto;
+}
+.fr-content-container {
+  padding-top: 5vw;
+}
+.fr-work-img img {
+  width: 100%;
+  margin: 2em 0;
 }
 /*# sourceMappingURL=bootstrap-theme.css.map */

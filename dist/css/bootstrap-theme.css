@@ -360,7 +360,7 @@ body {
 }
 .fr-text-loop {
   margin-top: -22vw;
-  color: white;
+  color: rgba(255, 255, 255, 0.91);
   text-shadow: 1em 1em 7em #777;
 }
 .adjective-loop {
@@ -375,6 +375,27 @@ body {
 .fr-tile-container {
   margin-top: 3vw;
   margin-bottom: 5vw;
+}
+.fr-social-list {
+  margin-top: -25vw;
+  text-shadow: 1em 1em 7em #777;
+  color: rgba(255, 255, 255, 0.91);
+  font-size: 5.5vw;
+}
+.fr-social-list p div i {
+  padding: auto 3vw;
+}
+#fr-social-icon {
+  margin-top: -20vw;
+  font-size: 9vw;
+  color: rgba(255, 255, 255, 0.91);
+}
+#fr-social-icon :hover {
+  text-shadow: 0.05em 0.05em 0.3em rgba(255, 255, 255, 0.5);
+  transition: .1s;
+}
+.fr-social-text {
+  margin-bottom: -3vw;
 }
 .fr-work-header {
   box-shadow: 1px 1px 17px rgba(221, 221, 221, 0.5);

@@ -18,7 +18,7 @@
     'Artist', 
     'Architect', 
     'Inventionist', 
-    'Friend',
+    'Coder',
     'Reader'
   ];
 

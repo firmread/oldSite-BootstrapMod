@@ -5,6 +5,7 @@ title: dance
 slug: dance
 lead: "Interactive environment inspired by Yoko Ono's tweet"
 year: 2011
+tags: "Processing, Performance"
 ---
 
 <div class="row">
@@ -13,12 +14,21 @@ year: 2011
 
 
 	<div class="fr-work-text col-xs-12 col-md-4 col-md-push-8">
+		<h3>{{page.title}}</h3>
+		<h5>{{page.year}}</h5>
+		<h6>{{page.tags}}</h6>
+		{% if page.collab %}
+		<h6> in collaboration with {{page.collab}}</h6>
+		{% endif %}
 		  
 		<p>
-			That they is a two player iPad game about relationship that encourages physical collaboration and negotiation. As each player have to control and solve their character's problem in saperated world, they also have to physically negotiate on how to tilt iPad to control a power particle to let them both progress further within the game.
+			"Think of all your movements in life as dance movements. Breathe. Watch. Listen. Touch. And move between the earth and the sky." - Yoko Ono
 		</p>
 		<p>
-			The project is written in OpenFrameworks (C++).
+			As a nerd, I don't dance much in my life, if I was at all. While my physical body might be quite static most of the time. It is these kind of poem that moves me. Allows me to romantize, write, and perform. Between the earth and the sky, indeed. 
+		</p>
+		<p>
+			The project is written in Processing and Max/MSP.
 		</p>
 
 	</div>

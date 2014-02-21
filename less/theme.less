@@ -272,9 +272,6 @@
 
 
 
-
-
-
 //=================
 //menu 
 //================= 
@@ -369,11 +366,11 @@ body{
 
 
 .fr-social-list{
-  margin-top: -25vw;
-  p div i{ padding: auto 3vw;}
+  margin-top: -27vw;
+  span{ padding: auto 3vw;}
   text-shadow: 1em 1em 7em #777;
   color:rgba(255, 255, 255, 0.91);
-  font-size: 5.5vw;
+  h1{font-size: 4.2vw;}
 }
 
 
@@ -381,15 +378,16 @@ body{
 #fr-social-icon{
   margin-top: -20vw;
   font-size: 9vw;
-  color: rgba(255, 255, 255, 0.91);
+  color: rgba(250, 250, 250, 0.91);
   :hover{
+  color: rgba(255, 255, 255, 0.95);
     text-shadow: 0.05em 0.05em 0.3em rgba(255, 255, 255, 0.5);
-    transition: .1s;
+    transition: .2s;
   }
 }
 
 .fr-social-text{
-  margin-bottom: -3vw;
+  margin-bottom: -2.5vw;
 }
 
 
@@ -417,7 +415,7 @@ body{
   border-style: none;
   border-color: transparent;
   background-color: white;
-  font-size: 3vw;
+  h1{font-size: 2.75vw;}
   padding-bottom: 5vw;
 }
 
@@ -438,12 +436,24 @@ body{
 .fr-work-img{
   img{
     width: 100%;
-    margin:2em 0;
+    margin-top: .75em;
+    margin-bottom:.75em;
   }
 }
 
 .fr-work-text{
-
+  h5{
+    font-size: 1.4em;
+    margin-top: -.5em;
+  }
+  h6{
+    margin-top: -.4em;
+    // margin-bottom: 1em;
+  }
+  p{
+    margin-top: 2em;
+    color: rgba(100, 100, 100, 0.91);
+  }
 }
 
 
@@ -452,11 +462,36 @@ body{
 
 
 
+// RESPONSIVE VIDEO
+//Copyright (c) 2011 ZURB, http://www.zurb.com/
 
 
-
-
-
+.flex-video {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+ 
+.flex-video.widescreen { padding-bottom: 57.25%; }
+.flex-video.vimeo { padding-top: 0; }
+.flex-video.vine { padding-bottom: 100%;}
+.flex-video.instagram { padding-bottom: 116%; }
+ 
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+  .flex-video { padding-top: 0; }
+}
 
 
 

@@ -1,11 +1,12 @@
 ---
 layout: default
 category: work
-title: Interactive touchscreen app for Estée Lauder
+title: Estée Lauder
 slug: estee
-lead: "Two player iPad game about relationship <br> that encourages physical collaboration and negotiation"
+lead: "Interactive app in custom touchscreen device<br>and LED strip in frosted glass for Estée Lauder store mockup"
 year: 2011
 collab: "Zach Lieberman, Yesyesno LLC"
+tags: "Awesomium Frameworks, OpenFrameworks, HTML, CSS, JavaScript, Arduino"
 ---
 
 <div class="row">
@@ -14,12 +15,18 @@ collab: "Zach Lieberman, Yesyesno LLC"
 
 
 	<div class="fr-work-text col-xs-12 col-md-4 col-md-push-8">
+		<h3>{{page.title}}</h3>
+		<h5>{{page.year}}</h5>
+		<h6>{{page.tags}}</h6>
+		{% if page.collab %}
+		<h6> in collaboration with {{page.collab}}</h6>
+		{% endif %}
 		  
 		<p>
-			That they is a two player iPad game about relationship that encourages physical collaboration and negotiation. As each player have to control and solve their character's problem in saperated world, they also have to physically negotiate on how to tilt iPad to control a power particle to let them both progress further within the game.
+			Estée Lauder's interactive product catalog app for custom touchscreen in concept store mockup. This project was made in combination of various technologies. It's wrapped in OpenFrameworks to make smooth transitions, powerful video handling, and customizable touchscreen events input. While also bring some of the best web libraries through Awesomium frameworks to make the content easily customizable in future iterations for the client.  
 		</p>
 		<p>
-			The project is written in OpenFrameworks (C++).
+			The project is written in Awesomium Frameworks, OpenFrameworks, HTML, CSS, JavaScript.
 		</p>
 
 	</div>
@@ -30,8 +37,15 @@ collab: "Zach Lieberman, Yesyesno LLC"
 
 	<div class="fr-work-img col-xs-12 col-md-8 col-md-pull-4">  
 
-		<img src="../assets/img/t_thatthey.png" alt"pic" />
-
+		<img src="../assets/img/estee/2013-06-11 19.36.00.jpg"/>
+		<img src="../assets/img/estee/Screen Shot 2013-09-15 at 1.21.49 AM.png"/>
+		<img src="../assets/img/estee/Screen Shot 2013-09-15 at 1.25.50 AM.png"/>
+		<div class="flex-video vine">
+			<iframe class="vine-embed" src="https://vine.co/v/blwTvdHBQ1W/embed/simple" width="600" height="600" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+		</div>
+		<div class="flex-video vine">
+			<iframe class="vine-embed" src="https://vine.co/v/blwT9IBTpg2/embed/simple" width="600" height="600" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+		</div>
 	</div>
 
 

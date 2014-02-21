@@ -3,16 +3,22 @@ layout: default
 category: work
 title: zoomDraw
 slug: zoomdraw
-lead: "iPad app that allows you to draw in dimension of float number."
+lead: "iPad app that allows you to draw<br> and zoom in dimension of float number"
 year: 2014
 collab: "Zach Lieberman"
+tags: "OpenFrameworks, Objective-C, iOS"
 ---
 
+
 <div class="row">
-	<div class="col-xs-12 col-md-8">
-		<img src="">
-	</div>
-	<div class="col-xs-12 col-md-4">
+
+	<div class="fr-work-text col-xs-12 col-md-4 col-md-push-8">
+		<h3>{{page.title}}</h3>
+		<h5>{{page.year}}</h5>
+		<h6>{{page.tags}}</h6>
+		{% if page.collab %}
+		<h6> in collaboration with {{page.collab}}</h6>
+		{% endif %}
 		<p>
 			zoomDraw (working title) is an iPad app that allow you to draw in dimension of float number. So that you can draw and unlimitedly zoom in and out to navigate within the canvas of iPad screen. 
 		</p>
@@ -20,9 +26,15 @@ collab: "Zach Lieberman"
 		<p>
 			The project is written in OpenFrameworks (C++) and Objective-C.
 		</p>
-	</div>
-</div>
 
+	</div>
+	<div class="fr-work-img col-xs-12 col-md-8 col-md-pull-4">  
+
+		<img src="../assets/img/t_typhoonflux.png" alt"pic" />
+
+	</div>
+
+</div>
 
 
 {% include worktile.html %}

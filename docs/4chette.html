@@ -3,8 +3,9 @@ layout: default
 category: work
 title: 4chette
 slug: 4chette
-lead: "Github for food recipe on the phone"
+lead: "Github for food recipe on smartphone"
 year: 2013
+tags: UI/UX
 ---
 
 <div class="row">
@@ -13,14 +14,19 @@ year: 2013
 
 
 	<div class="fr-work-text col-xs-12 col-md-4 col-md-push-8">
+		<h3>{{page.title}}</h3>
+		<h5>{{page.year}}</h5>
+		<h6>{{page.tags}}</h6>
+		{% if page.collab %}
+		<h6> in collaboration with {{page.collab}}</h6>
+		{% endif %}
 		  
 		<p>
-			That they is a two player iPad game about relationship that encourages physical collaboration and negotiation. As each player have to control and solve their character's problem in saperated world, they also have to physically negotiate on how to tilt iPad to control a power particle to let them both progress further within the game.
+			4chette (Fourchette, French for fork) is a concept design for opensource social networks on mobile device. It makes documenting and sharing food recipe much easier by snapping a photo and gestural controls. 
 		</p>
 		<p>
-			The project is written in OpenFrameworks (C++).
+			Food in every single meal contains in cultural heritage that could be very interesting if you can track it down. There might be some ingredients that you simply never used or alternative ways to cook your every meals that you never realized. 4chette mash up your meal with other users. Contributing your iteration of the meal to 4chette and let the world taste your unique recipe.  
 		</p>
-
 	</div>
 
 
@@ -29,7 +35,11 @@ year: 2013
 
 	<div class="fr-work-img col-xs-12 col-md-8 col-md-pull-4">  
 
-		<img src="../assets/img/t_thatthey.png" alt"pic" />
+		<img src="../assets/img/4chette/forkmenot.jpg" />
+		<img src="../assets/img/4chette/4chette_final_mod.jpg" />
+		<img src="../assets/img/4chette/SCN_0001.jpg" />
+		<img src="../assets/img/4chette/sketch.jpg" />
+		
 
 	</div>
 

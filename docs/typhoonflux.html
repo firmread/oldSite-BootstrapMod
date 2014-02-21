@@ -3,15 +3,22 @@ layout: default
 category: work
 title: typhoon/flux
 slug: typhoonflux
-lead: "Playful intervention on 10 Avenue Square, <br> urban theater on High Line Park"
+lead: "Roshambo intervention on 10 Avenue Square, <br> urban theater, High Line Park"
 year: 2011
 collab: "Paul Cheng, Yong Lee, Tom Lawrie"
+tags: "Urban intervention, Game"
 ---
 
 
 <div class="row">
 
 	<div class="fr-work-text col-xs-12 col-md-4 col-md-push-8">
+		<h3>{{page.title}}</h3>
+		<h5>{{page.year}}</h5>
+		<h6>{{page.tags}}</h6>
+		{% if page.collab %}
+		<h6> in collaboration with {{page.collab}}</h6>
+		{% endif %}
 		<p>
 			Typhoon/flux is a collective of designer and developers that share interest in intersection of playful experience and urban environment. 
 		</p>

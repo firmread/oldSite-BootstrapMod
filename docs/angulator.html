@@ -5,6 +5,7 @@ title: Angulator
 slug: angulator
 lead: "Weird gestural music instrument"
 year: 2012
+tags: "OpenFrameworks, Arduino"
 ---
 
 <div class="row">
@@ -13,12 +14,18 @@ year: 2012
 
 
 	<div class="fr-work-text col-xs-12 col-md-4 col-md-push-8">
+		<h3>{{page.title}}</h3>
+		<h5>{{page.year}}</h5>
+		<h6>{{page.tags}}</h6>
+		{% if page.collab %}
+		<h6> in collaboration with {{page.collab}}</h6>
+		{% endif %}
 		  
 		<p>
-			That they is a two player iPad game about relationship that encourages physical collaboration and negotiation. As each player have to control and solve their character's problem in saperated world, they also have to physically negotiate on how to tilt iPad to control a power particle to let them both progress further within the game.
+			Rapid prototype of a physical gestural music instrument. Its shape is borrowing from something you could imagine Bruce Lee swinging around. However, with this instrument you don't need to have as much level of acting, muscle, or martial arts skills to make weird sound.  
 		</p>
 		<p>
-			The project is written in OpenFrameworks (C++).
+			The project is written in OpenFrameworks (C++) and Arduino.
 		</p>
 
 	</div>
